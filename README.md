@@ -14,7 +14,7 @@ UIKit iOS app with `Main.storyboard` for browsing NASA Astronomy Picture of the 
 
 ## API Key
 
-The app reads `NASA_API_KEY` from Info.plist. The Xcode project is configured to load this value from `Config/Secrets.xcconfig`.
+The app reads `NASA_API_KEY` from Info.plist. The key is optional: if it is missing or unresolved, the app automatically uses `DEMO_KEY`.
 
 Current endpoint:
 
@@ -26,11 +26,13 @@ For a real submission, create a NASA API key at:
 
 https://api.nasa.gov/
 
-Then add the key locally:
+For a local real key, copy the example file and pass it to Xcode builds (or add `NASA_API_KEY` as a user-defined build setting):
 
 ```xcconfig
 NASA_API_KEY = DEMO_KEY
 ```
+
+The local file `Config/Secrets.xcconfig` is ignored by Git. With command-line builds, use `xcodebuild -xcconfig Config/Secrets.xcconfig`.
 
 Avoid committing a private API key to a public repository.
 

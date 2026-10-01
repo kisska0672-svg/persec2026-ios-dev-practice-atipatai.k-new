@@ -30,7 +30,6 @@
 		41F64C1A64ACD0658F9A04DA /* Date+Month.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Month.swift"; sourceTree = "<group>"; };
 		5E0A3C0F86964D2C6CE47716 /* APODDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APODDetailViewController.swift; sourceTree = "<group>"; };
 		644C87F20E5F4AA4A7538932 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6A94361A9502B69CA4BE6022 /* Secrets.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 		6E4F080F11E9414EA69BD769 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7B2C4D6E8F901A2B3C4D5E6F /* LauncherViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LauncherViewController.swift; sourceTree = "<group>"; };
 		8203314180AB69CDEF21DCEC /* APODItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APODItem.swift; sourceTree = "<group>"; };
@@ -124,7 +123,6 @@
 				F0954ECA044F5B32535C890C /* Products */,
 				0B27D7CB425DDC1E4DA497A1 /* Frameworks */,
 				FA250D2F5C822F2FA65A527C /* NASAAPOD */,
-				CF65D1E9C6AB120185C60441 /* Config */,
 				829B690E985CDAC191BA7775 /* Products */,
 				23882D11F76A0E8F5811C0AC /* Frameworks */,
 			);
@@ -136,14 +134,6 @@
 				8203314180AB69CDEF21DCEC /* APODItem.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		CF65D1E9C6AB120185C60441 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				6A94361A9502B69CA4BE6022 /* Secrets.xcconfig */,
-			);
-			path = Config;
 			sourceTree = "<group>";
 		};
 		F0954ECA044F5B32535C890C /* Products */ = {
@@ -257,7 +247,6 @@
 /* Begin XCBuildConfiguration section */
 		1A352CA3122D74FE0C4A16F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A94361A9502B69CA4BE6022 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -320,7 +309,6 @@
 		};
 		8A43941BB3CF05950A303038 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A94361A9502B69CA4BE6022 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -346,7 +334,6 @@
 		};
 		9860072BF8C5B536B379662E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A94361A9502B69CA4BE6022 /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -401,7 +388,6 @@
 		};
 		F2EAC0D32C4D284336C64D93 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A94361A9502B69CA4BE6022 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
