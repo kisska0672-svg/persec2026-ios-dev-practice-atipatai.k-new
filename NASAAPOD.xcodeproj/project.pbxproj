@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F4A8B2C9D3E1F60718293A4 /* LauncherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2C4D6E8F901A2B3C4D5E6F /* LauncherViewController.swift */; };
+		39F46E7250ADB9107E229BE2 /* APODDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A3C0F86964D2C6CE47716 /* APODDetailViewController.swift */; };
+		3C30D7C52DEFCBC2A160059D /* APODService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D2F2C882BED9B289ED71A /* APODService.swift */; };
+		477F7196EA69B3507580E7C4 /* APODListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0552AFE3557E81C8CA0271F2 /* APODListViewController.swift */; };
+		768CCB12037261B11483A08F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3351C5F6550D32FFB8834FB /* SceneDelegate.swift */; };
+		8EF738C03B858129BA3D234F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119ED6D0705A850ECD8EB8DC /* Main.storyboard */; };
+		A68E3A9234664AA690BCD122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644C87F20E5F4AA4A7538932 /* LaunchScreen.storyboard */; };
+		BE045B9177A2F6289440905B /* APODTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E234AFD9B0FCD04BF5EC3D64 /* APODTableViewCell.swift */; };
+		C522026628C8A24356D61C88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1631F78DCAD82ED2FDD536 /* AppDelegate.swift */; };
+		CC85092D2BA56409445FCEF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4F080F11E9414EA69BD769 /* Foundation.framework */; };
+		D2F90770EEF769D6B4ADF1A3 /* Date+Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F64C1A64ACD0658F9A04DA /* Date+Month.swift */; };
+		DC3204FAD474DB6A0ED06261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF840D030A7A86865CF75E2 /* Assets.xcassets */; };
+		FFC117CFC2BCC6453F0ACCE2 /* APODItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8203314180AB69CDEF21DCEC /* APODItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0552AFE3557E81C8CA0271F2 /* APODListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APODListViewController.swift; sourceTree = "<group>"; };
+		119ED6D0705A850ECD8EB8DC /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Resources/Main.storyboard; sourceTree = "<group>"; };
+		1E74621025278E8DBD662460 /* NASAAPOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAAPOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1631F78DCAD82ED2FDD536 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41F64C1A64ACD0658F9A04DA /* Date+Month.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Month.swift"; sourceTree = "<group>"; };
+		5E0A3C0F86964D2C6CE47716 /* APODDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APODDetailViewController.swift; sourceTree = "<group>"; };
+		644C87F20E5F4AA4A7538932 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A94361A9502B69CA4BE6022 /* Secrets.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		6E4F080F11E9414EA69BD769 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B2C4D6E8F901A2B3C4D5E6F /* LauncherViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LauncherViewController.swift; sourceTree = "<group>"; };
+		8203314180AB69CDEF21DCEC /* APODItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APODItem.swift; sourceTree = "<group>"; };
+		8F5D2F2C882BED9B289ED71A /* APODService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APODService.swift; sourceTree = "<group>"; };
+		ACF840D030A7A86865CF75E2 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		C3351C5F6550D32FFB8834FB /* SceneDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E234AFD9B0FCD04BF5EC3D64 /* APODTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APODTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25932E2C5BD05FB5C5294391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC85092D2BA56409445FCEF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B27D7CB425DDC1E4DA497A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94149944B1EE7AA612F138C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0CD5BADEE308551D3EF24910 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41F64C1A64ACD0658F9A04DA /* Date+Month.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		23882D11F76A0E8F5811C0AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		338F6ADC909178C40B406C62 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F5D2F2C882BED9B289ED71A /* APODService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		829B690E985CDAC191BA7775 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DC014E8B133070C32EBE1AF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7B2C4D6E8F901A2B3C4D5E6F /* LauncherViewController.swift */,
+				5E0A3C0F86964D2C6CE47716 /* APODDetailViewController.swift */,
+				0552AFE3557E81C8CA0271F2 /* APODListViewController.swift */,
+				E234AFD9B0FCD04BF5EC3D64 /* APODTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		94149944B1EE7AA612F138C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E4F080F11E9414EA69BD769 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B07B1D74306E7D16006C2C5E /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				644C87F20E5F4AA4A7538932 /* LaunchScreen.storyboard */,
+				119ED6D0705A850ECD8EB8DC /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		B3A221054A4A0033E68BBC74 = {
+			isa = PBXGroup;
+			children = (
+				F0954ECA044F5B32535C890C /* Products */,
+				0B27D7CB425DDC1E4DA497A1 /* Frameworks */,
+				FA250D2F5C822F2FA65A527C /* NASAAPOD */,
+				CF65D1E9C6AB120185C60441 /* Config */,
+				829B690E985CDAC191BA7775 /* Products */,
+				23882D11F76A0E8F5811C0AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC19796D7C3831E8470D22D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8203314180AB69CDEF21DCEC /* APODItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF65D1E9C6AB120185C60441 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6A94361A9502B69CA4BE6022 /* Secrets.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F0954ECA044F5B32535C890C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E74621025278E8DBD662460 /* NASAAPOD.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA250D2F5C822F2FA65A527C /* NASAAPOD */ = {
+			isa = PBXGroup;
+			children = (
+				2A1631F78DCAD82ED2FDD536 /* AppDelegate.swift */,
+				8DC014E8B133070C32EBE1AF /* Controllers */,
+				0CD5BADEE308551D3EF24910 /* Extensions */,
+				CC19796D7C3831E8470D22D6 /* Models */,
+				B07B1D74306E7D16006C2C5E /* StoryBoard */,
+				C3351C5F6550D32FFB8834FB /* SceneDelegate.swift */,
+				338F6ADC909178C40B406C62 /* Services */,
+				ACF840D030A7A86865CF75E2 /* Assets.xcassets */,
+			);
+			path = NASAAPOD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD973256C7EBBFB6EE2C6120 /* NASAAPOD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED31B0FFBD2FC90948A7156 /* Build configuration list for PBXNativeTarget "NASAAPOD" */;
+			buildPhases = (
+				0A24002B43329735D1F13E2A /* Sources */,
+				25932E2C5BD05FB5C5294391 /* Frameworks */,
+				21CB9355245F22A20EB6DA7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NASAAPOD;
+			productName = NASAAPOD;
+			productReference = 1E74621025278E8DBD662460 /* NASAAPOD.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6445A830AFD01C6D66D31C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					FD973256C7EBBFB6EE2C6120 = {
+						DevelopmentTeam = 35A28B8PA2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F15976F0A7F8F155E297753A /* Build configuration list for PBXProject "NASAAPOD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3A221054A4A0033E68BBC74;
+			productRefGroup = F0954ECA044F5B32535C890C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD973256C7EBBFB6EE2C6120 /* NASAAPOD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21CB9355245F22A20EB6DA7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3204FAD474DB6A0ED06261 /* Assets.xcassets in Resources */,
+				A68E3A9234664AA690BCD122 /* LaunchScreen.storyboard in Resources */,
+				8EF738C03B858129BA3D234F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A24002B43329735D1F13E2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C522026628C8A24356D61C88 /* AppDelegate.swift in Sources */,
+				0F4A8B2C9D3E1F60718293A4 /* LauncherViewController.swift in Sources */,
+				39F46E7250ADB9107E229BE2 /* APODDetailViewController.swift in Sources */,
+				477F7196EA69B3507580E7C4 /* APODListViewController.swift in Sources */,
+				BE045B9177A2F6289440905B /* APODTableViewCell.swift in Sources */,
+				D2F90770EEF769D6B4ADF1A3 /* Date+Month.swift in Sources */,
+				FFC117CFC2BCC6453F0ACCE2 /* APODItem.swift in Sources */,
+				768CCB12037261B11483A08F /* SceneDelegate.swift in Sources */,
+				3C30D7C52DEFCBC2A160059D /* APODService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A352CA3122D74FE0C4A16F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A94361A9502B69CA4BE6022 /* Secrets.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8A43941BB3CF05950A303038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A94361A9502B69CA4BE6022 /* Secrets.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35A28B8PA2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "NASA APOD";
+				INFOPLIST_KEY_NASA_API_KEY = "$(NASA_API_KEY)";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NASAAPOD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9860072BF8C5B536B379662E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A94361A9502B69CA4BE6022 /* Secrets.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F2EAC0D32C4D284336C64D93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A94361A9502B69CA4BE6022 /* Secrets.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35A28B8PA2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "NASA APOD";
+				INFOPLIST_KEY_NASA_API_KEY = "$(NASA_API_KEY)";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NASAAPOD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ED31B0FFBD2FC90948A7156 /* Build configuration list for PBXNativeTarget "NASAAPOD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EAC0D32C4D284336C64D93 /* Release */,
+				8A43941BB3CF05950A303038 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F15976F0A7F8F155E297753A /* Build configuration list for PBXProject "NASAAPOD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A352CA3122D74FE0C4A16F5 /* Debug */,
+				9860072BF8C5B536B379662E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6445A830AFD01C6D66D31C9 /* Project object */;
+}

@@ -1,0 +1,11 @@
+.DS_Store
+DerivedData/
+*.xcuserstate
+*.xcuserdata/
+*.moved-aside
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Local API key config.
+Config/Secrets.xcconfig

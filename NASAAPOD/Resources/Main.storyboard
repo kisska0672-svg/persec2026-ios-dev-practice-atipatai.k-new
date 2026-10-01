@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nav-controller">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nav-scene">
+            <objects>
+                <navigationController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="nav-controller" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="navigation-bar">
+                        <rect key="frame" x="0.0" y="118" width="393" height="54"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wje-xF-g9D">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="launcher-view-controller" kind="relationship" relationship="rootViewController" id="root-segue"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nav-first-responder" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="-14"/>
+        </scene>
+        <!--Launcher-->
+        <scene sceneID="launcher-scene">
+            <objects>
+                <viewController id="launcher-view-controller" customClass="LauncherViewController" customModule="NASAAPOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="launcher-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="launcher-stack">
+                                <rect key="frame" x="32" y="396" width="329" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NASA APOD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="launcher-title-label">
+                                        <rect key="frame" x="130" y="0.0" width="69" height="14"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleLargeTitle"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astronomy Picture of the Day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="launcher-subtitle-label">
+                                        <rect key="frame" x="36.666666666666686" y="32" width="256" height="28"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nasa-logo" translatesAutoresizingMaskIntoConstraints="NO" id="i0R-24-8fm">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="launcher-safe-area"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="i0R-24-8fm" firstAttribute="leading" secondItem="launcher-view" secondAttribute="leading" id="2Ty-T6-y6H"/>
+                            <constraint firstAttribute="trailing" secondItem="i0R-24-8fm" secondAttribute="trailing" id="E6i-eg-ZcA"/>
+                            <constraint firstItem="i0R-24-8fm" firstAttribute="top" secondItem="launcher-view" secondAttribute="top" id="V3r-ia-Zwc"/>
+                            <constraint firstItem="i0R-24-8fm" firstAttribute="centerY" secondItem="launcher-view" secondAttribute="centerY" id="b03-SE-V6P"/>
+                            <constraint firstItem="i0R-24-8fm" firstAttribute="centerX" secondItem="launcher-view" secondAttribute="centerX" id="c3O-kc-iW2"/>
+                            <constraint firstItem="launcher-stack" firstAttribute="centerX" secondItem="launcher-view" secondAttribute="centerX" id="launcher-stack-center-x"/>
+                            <constraint firstItem="launcher-stack" firstAttribute="centerY" secondItem="launcher-view" secondAttribute="centerY" id="launcher-stack-center-y"/>
+                            <constraint firstItem="launcher-stack" firstAttribute="leading" secondItem="launcher-safe-area" secondAttribute="leading" constant="32" id="launcher-stack-leading"/>
+                            <constraint firstItem="launcher-safe-area" firstAttribute="trailing" secondItem="launcher-stack" secondAttribute="trailing" constant="32" id="launcher-stack-trailing"/>
+                            <constraint firstAttribute="bottom" secondItem="i0R-24-8fm" secondAttribute="bottom" id="rmu-IP-gRt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Launcher" id="launcher-navigation-item"/>
+                    <connections>
+                        <segue destination="list-view-controller" kind="show" identifier="showAPODList" id="segue-show-apod-list"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="launcher-first-responder" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="-720"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="list-scene">
+            <objects>
+                <viewController id="list-view-controller" customClass="APODListViewController" customModule="NASAAPOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="list-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NASA APOD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="list-title-label">
+                                <rect key="frame" x="119.33333333333333" y="172" width="154.66666666666669" height="41.666666666666657"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="filter-stack">
+                                <rect key="frame" x="16" y="233.66666666666663" width="361" height="160"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="picker-stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="53.333333333333336"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="month-stack">
+                                                <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="53.333333333333336"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Select Month" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="select-month-label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="17.333333333333332"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="month-button">
+                                                        <rect key="frame" x="0.0" y="23.333333333333343" width="174.66666666666666" height="30"/>
+                                                        <state key="normal" title="Month"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="year-stack">
+                                                <rect key="frame" x="186.66666666666663" y="0.0" width="174.33333333333337" height="53.333333333333336"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Select Year" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="select-year-label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="174.33333333333334" height="17.333333333333332"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="year-button">
+                                                        <rect key="frame" x="0.0" y="23.333333333333343" width="174.33333333333334" height="30"/>
+                                                        <state key="normal" title="Year"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="search-button">
+                                        <rect key="frame" x="0.0" y="65.333333333333343" width="361" height="60.666666666666657"/>
+                                        <state key="normal" title="Search"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="ข้อมูลจากวันที่ 2026-10-01 - 2026-10-31" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="date-range-label">
+                                        <rect key="frame" x="0.0" y="138" width="361" height="18"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="112" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="apod-table-view">
+                                <rect key="frame" x="0.0" y="371.66666666666674" width="393" height="480.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a month and year, then tap Search." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="status-label">
+                                <rect key="frame" x="38" y="414" width="317.33333333333331" height="24.333333333333314"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="activity-indicator">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="list-safe-area"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="filter-stack" firstAttribute="height" constant="160" id="list-filter-height"/>
+                            <constraint firstItem="filter-stack" firstAttribute="leading" secondItem="list-safe-area" secondAttribute="leading" constant="16" id="list-filter-leading"/>
+                            <constraint firstItem="filter-stack" firstAttribute="top" secondItem="list-title-label" secondAttribute="bottom" constant="20" id="list-filter-top"/>
+                            <constraint firstItem="list-safe-area" firstAttribute="trailing" secondItem="filter-stack" secondAttribute="trailing" constant="16" id="list-filter-trailing"/>
+                            <constraint firstItem="activity-indicator" firstAttribute="centerX" secondItem="list-view" secondAttribute="centerX" id="list-loader-center-x"/>
+                            <constraint firstItem="activity-indicator" firstAttribute="centerY" secondItem="list-view" secondAttribute="centerY" id="list-loader-center-y"/>
+                            <constraint firstItem="status-label" firstAttribute="centerX" secondItem="list-view" secondAttribute="centerX" id="list-status-center-x"/>
+                            <constraint firstItem="status-label" firstAttribute="centerY" secondItem="list-view" secondAttribute="centerY" id="list-status-center-y"/>
+                            <constraint firstItem="status-label" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="list-view" secondAttribute="leading" constant="24" id="list-status-leading"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="status-label" secondAttribute="trailing" constant="24" id="list-status-trailing"/>
+                            <constraint firstAttribute="bottom" secondItem="apod-table-view" secondAttribute="bottom" id="list-table-bottom"/>
+                            <constraint firstItem="apod-table-view" firstAttribute="leading" secondItem="list-view" secondAttribute="leading" id="list-table-leading"/>
+                            <constraint firstItem="apod-table-view" firstAttribute="top" secondItem="filter-stack" secondAttribute="bottom" constant="12" id="list-table-top"/>
+                            <constraint firstAttribute="trailing" secondItem="apod-table-view" secondAttribute="trailing" id="list-table-trailing"/>
+                            <constraint firstItem="list-title-label" firstAttribute="centerX" secondItem="list-view" secondAttribute="centerX" id="list-title-center-x"/>
+                            <constraint firstItem="list-title-label" firstAttribute="top" secondItem="list-safe-area" secondAttribute="top" id="list-title-top"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="activity-indicator" id="outlet-list-activity"/>
+                        <outlet property="dateRangeLabel" destination="date-range-label" id="outlet-list-date-range"/>
+                        <outlet property="filterStackView" destination="filter-stack" id="outlet-list-filter-stack"/>
+                        <outlet property="monthButton" destination="month-button" id="outlet-list-month"/>
+                        <outlet property="searchButton" destination="search-button" id="outlet-list-search"/>
+                        <outlet property="statusLabel" destination="status-label" id="outlet-list-status"/>
+                        <outlet property="tableView" destination="apod-table-view" id="outlet-list-table"/>
+                        <outlet property="titleLabel" destination="list-title-label" id="outlet-list-title"/>
+                        <outlet property="yearButton" destination="year-button" id="outlet-list-year"/>
+                        <segue destination="detail-view-controller" kind="show" identifier="showDetail" id="segue-show-detail"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="list-first-responder" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="-14"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="detail-scene">
+            <objects>
+                <viewController id="detail-view-controller" customClass="APODDetailViewController" customModule="NASAAPOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="detail-view">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="detail-scroll-view">
+                                <rect key="frame" x="0.0" y="172" width="393" height="680"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="detail-content-stack">
+                                        <rect key="frame" x="16" y="15" width="361" height="240"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="detail-image-view">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="240"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="detail-image-view" secondAttribute="height" multiplier="361:240" id="tgn-li-8Id"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="detail-image-view" secondAttribute="trailing" id="XwN-hc-BhR"/>
+                                            <constraint firstItem="detail-image-view" firstAttribute="leading" secondItem="detail-content-stack" secondAttribute="leading" id="cca-hU-3P8"/>
+                                            <constraint firstItem="detail-image-view" firstAttribute="centerX" secondItem="detail-content-stack" secondAttribute="centerX" id="jF3-nH-aOU"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="detail-content-stack" firstAttribute="centerX" secondItem="detail-scroll-view" secondAttribute="centerX" id="D1Q-rM-aNx"/>
+                                    <constraint firstAttribute="bottom" secondItem="detail-content-stack" secondAttribute="bottom" constant="20" id="detail-stack-bottom"/>
+                                    <constraint firstItem="detail-content-stack" firstAttribute="leading" secondItem="detail-scroll-view" secondAttribute="leading" constant="16" id="detail-stack-leading"/>
+                                    <constraint firstItem="detail-content-stack" firstAttribute="top" secondItem="detail-scroll-view" secondAttribute="top" constant="15" id="detail-stack-top"/>
+                                    <constraint firstAttribute="trailing" secondItem="detail-content-stack" secondAttribute="trailing" constant="16" id="detail-stack-trailing"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="detail-safe-area"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="detail-scroll-view" secondAttribute="bottom" id="detail-scroll-bottom"/>
+                            <constraint firstItem="detail-scroll-view" firstAttribute="leading" secondItem="detail-view" secondAttribute="leading" id="detail-scroll-leading"/>
+                            <constraint firstItem="detail-scroll-view" firstAttribute="top" secondItem="detail-safe-area" secondAttribute="top" id="detail-scroll-top"/>
+                            <constraint firstAttribute="trailing" secondItem="detail-scroll-view" secondAttribute="trailing" id="detail-scroll-trailing"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentStack" destination="detail-content-stack" id="outlet-detail-stack"/>
+                        <outlet property="imageView" destination="detail-image-view" id="outlet-detail-image"/>
+                        <outlet property="scrollView" destination="detail-scroll-view" id="outlet-detail-scroll"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="detail-first-responder" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="-14"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="nasa-logo" width="344" height="288"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
